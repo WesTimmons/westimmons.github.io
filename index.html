@@ -222,7 +222,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iPYBMx6JBZw" allowfullscreen></iframe>
+                                            <iframe id="yt-player" class="embed-responsive-item" src="https://www.youtube.com/embed/iPYBMx6JBZw" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -263,7 +263,7 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body" id="yt-player">
                                         <div class="embed-responsive embed-responsive-16by9">
                                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Sj01ay7UpeE" allowfullscreen></iframe>
                                         </div>
@@ -306,7 +306,7 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body" id="yt-player">
                                         <div class="embed-responsive embed-responsive-16by9">
                                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TJ3T7sQbVe8" allowfullscreen></iframe>
                                         </div>
@@ -365,7 +365,7 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body" id="yt-player">
                                         <div class="embed-responsive embed-responsive-16by9">
                                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4Mt4ZRe7YA4?si=LtAX_hFBeE1tcCK7" allowfullscreen></iframe>
                                         </div>
@@ -408,7 +408,7 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body" id="yt-player">
                                         <div class="embed-responsive embed-responsive-16by9">
                                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-lA-dEMpLtU?si=yaCuXf8wIggoYTyr" allowfullscreen></iframe>
                                         </div>
@@ -451,7 +451,7 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body" id="yt-player">
                                         <div class="embed-responsive embed-responsive-16by9">
                                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mpZTW9U94n0?si=HgsYLA3q8Vb8Hc2_" allowfullscreen></iframe>
                                         </div>
@@ -494,7 +494,7 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body" id="yt-player">
                                         <div class="embed-responsive embed-responsive-16by9">
                                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SWcSEza4B6Y?si=iHonzpJTuhWZVl1Y" allowfullscreen></iframe>
                                         </div>
@@ -554,7 +554,6 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
         
         <script>
             //Get Current YeaR
@@ -571,6 +570,16 @@
                     image.attr('src', image.data('src'));
                     image.removeAttr('data-src');
                 });
+            });
+
+            //Stop YT Video from Playing on Modal Close
+            $(document).ready(function() {
+              $('#videoModal1,#videoModal2,#videoModal3,#editingModal1,#editingModal2,#editingModal3,#editingModal4').on('hidden.bs.modal', function() {
+                var $this = $(this).find('iframe'),
+                  tempSrc = $this.attr('src');
+                $this.attr('src', "");
+                $this.attr('src', tempSrc);
+              });
             });
         </script>
     </body>
