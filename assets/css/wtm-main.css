@@ -38,6 +38,9 @@ a:hover {
 .btn-outline-primary.focus, .btn-outline-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(0,0, 0,.5);
 }
+
+
+
 .top-25 {
     top:25%;
 }
@@ -164,7 +167,31 @@ a:hover {
 .hovereffect a.info:hover {
   box-shadow: 0 0 5px #fff;
 }
-
+ 
+/* CTA Banner CSS */
+.bg-pixieset {
+    background: url('../images/Prom-tree.jpg');
+    background-attachment: cover;
+    background-repeat: no-repeat;
+    min-height:500px;
+    z-index:100;
+    position: relative;
+}
+.bg-pixieset:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.75);
+}
+@media (max-width:768px) {
+    .cta-pixieset {
+        margin-top: 10px;
+        width:100%;
+    }
+}
 
 /* Video CSS */
 .video-section {
