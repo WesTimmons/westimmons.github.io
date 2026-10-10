@@ -120,3 +120,13 @@ html {
     column-count: 1;
   }
 }
+
+/* Footer Social Icons Hover Effect */
+.footer-social-icon {
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.footer-social-icon:hover {
+  color: #ffffff !important; /* Brightens icon on hover */
+  transform: translateY(-2px); /* Subtle upward movement */
+}
