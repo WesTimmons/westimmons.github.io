@@ -1,0 +1,122 @@
+/* Smooth Scroll Anchor links */ 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+/* Navbar Base & Smooth Transition */
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+  background-color: transparent;
+}
+
+/* Navbar Solid State (Triggered on Scroll) */
+.navbar.scrolled {
+  background-color: #0d0d0d !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+/* Full-Width Mobile Dropdown Menu */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #0d0d0d; /* Solid dark background */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
+    /* Remove floating card shape & push full width */
+    border-radius: 0 !important;
+    margin-left: -1rem;  /* Negates default container padding on mobile */
+    margin-right: -1rem; /* Negates default container padding on mobile */
+    margin-top: 0.75rem;
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9);
+  }
+
+  .navbar-collapse .nav-link {
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+  }
+}
+
+/* Active State for Portfolio Filter Pills */
+#portfolio-filters .btn.active {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+/* 100vh Full-Bleed Hero Section */
+.hero-fullbleed {
+  height: 100vh;
+  min-height: 650px;
+  width: 100%;
+  position: relative;
+}
+
+/* Full-Bleed Image Background Wrapper */
+.hero-image-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: contrast(1.15) brightness(0.55);
+}
+
+/* Dark Vignette Gradient Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(5,5,5,0.2) 0%, rgba(5,5,5,0.8) 90%),
+              linear-gradient(180deg, rgba(5,5,5,0.7) 0%, rgba(5,5,5,0.1) 40%, rgba(5,5,5,1) 90%);
+  z-index: 1;
+}
+
+/* Dark Customization for GLightbox Modal */
+.goverlay {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+.gnext, .gprev, .gclose {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 50% !important;
+}
+
+.gnext:hover, .gprev:hover, .gclose:hover {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Photography Masonry Layout */
+.photo-masonry-grid {
+  column-count: 3;
+  column-gap: 1.5rem;
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive adjustment for tablets & mobile */
+@media (max-width: 991px) {
+  .photo-masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 575px) {
+  .photo-masonry-grid {
+    column-count: 1;
+  }
+}

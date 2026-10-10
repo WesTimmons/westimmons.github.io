@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self'; 
+  script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; 
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; 
+  font-src 'self' https://fonts.gstatic.com; 
+  img-src 'self' data: https:; 
+  frame-src https://www.youtube.com; 
+  connect-src 'self' https://api.web3forms.com;">
+  <title>Wes Timmons Media | Cinematic Filmmaking & Narrative Editing</title>
+  <!-- Google Fonts for Editorial Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="/assets/css/custom.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white">
+
+  <!-- Fixed Transparent Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top py-3 navbar-dark bg-gradient-vignette">
+    <div class="container-fluid px-4 px-md-5">
+      <a class="navbar-brand fw-bold text-uppercase tracking-wider font-cinzel fs-4" href="/">WES TIMMONS MEDIA</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-lg-4 text-uppercase tracking-widest small fw-semibold">
+          <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/editing-and-film/">Editing & Film</a></li>
+          <li class="nav-item"><a class="nav-link" href="/photography/">Photography</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about-contact/">About & Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Full-Bleed 100vh Hero -->
+  <section class="hero-fullbleed position-relative d-flex align-items-center justify-content-center text-center">
+    
+    <!-- Hero Background Image -->
+    <div class="hero-image-wrapper">
+      <img src="/assets/images/hero-1.jpg" 
+           alt="Cinematic Camera Set Background" 
+           class="hero-bg-img">
+    </div>
+    
+    <!-- Dark Vignette Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Hero Content Overlay -->
+    <div class="container position-relative z-2 px-4">
+      <p class="text-uppercase tracking-widest text-secondary fw-semibold mb-3 small">Filmmaker &bull; Editor &bull; Photographer</p>
+      <h1 class="display-1 fw-bold font-cinzel text-uppercase tracking-wide mb-4">Visual Storytelling<br>With Purpose.</h1>
+      <p class="lead text-light-50 max-w-700 mx-auto mb-5 font-sans fw-light fs-4">
+        Crafting award-winning narrative short films, high-impact trailer editing, and compelling visual art.
+      </p>
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+        <a href="#featured-reel" class="btn btn-outline-light btn-lg px-5 py-3 text-uppercase tracking-wider fs-6 rounded-pill">Watch Showreel</a>
+        <a href="/about-contact/" class="btn btn-primary btn-lg px-5 py-3 text-uppercase tracking-wider fs-6 rounded-pill">Get In Touch</a>
+      </div>
+    </div>
+
+    <!-- Scroll Down Arrow -->
+    <a href="#featured-reel" class="z-1 scroll-indicator position-absolute bottom-0 start-50 translate-middle-x mb-4 text-white text-decoration-none">
+      <span class="small text-uppercase tracking-widest d-block mb-1 opacity-50 text-white">Scroll</span>
+      &darr;
+    </a>
+  </section>
+
+  <!-- Full-Bleed Featured Showreel Strip -->
+  <section id="featured-reel" class="py-0 bg-black border-top border-bottom border-secondary-subtle">
+    <div class="container-fluid p-0">
+      <div class="row g-0 align-items-center bg-dark-surface">
+        
+        <!-- Video Column -->
+        <div class="col-lg-8">
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/w9ljbmFVUCA?si=XQyByfzLQdNQd1aM&rel=0" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Details Column -->
+        <div class="col-lg-4 p-4 p-md-5">
+          <span class="text-uppercase tracking-widest text-warning small fw-bold d-block mb-2">&starf; Featured Showreel</span>
+          <h2 class="display-5 font-cinzel fw-bold mb-3">WTM DEMO</h2>
+          <p class="text-secondary fs-5 font-sans fw-light mb-4">
+            A high-energy compilation of selected work, showcasing rhythm, narrative tension, color grading, and precise sound design across narrative and commercial projects.
+          </p>
+          <a href="/editing-and-film/" class="btn btn-link text-white text-decoration-none p-0 tracking-wider text-uppercase border-bottom pb-1">Explore All Work &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-Bleed Selected Works Grid -->
+  <section class="py-5 bg-black">
+    <div class="container-fluid px-md-5 py-5">
+      
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+        <div>
+          <p class="text-uppercase tracking-widest text-secondary small fw-semibold mb-1">Curated Works</p>
+          <h2 class="display-4 font-cinzel fw-bold mb-0">Selected Projects</h2>
+        </div>
+        <a href="/editing-and-film/" class="text-uppercase tracking-wider text-secondary text-decoration-none border-bottom border-secondary pb-1 mt-3 mt-md-0">All Editing & Film &rarr;</a>
+      </div>
+
+      <div class="row g-4 g-xl-5">
+        <!-- Project: The Lab - Bumper -->
+        <div class="col-md-6 col-lg-4">
+          <div class="cinematic-card position-relative overflow-hidden h-100 bg-dark-surface border border-secondary-subtle">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/-lA-dEMpLtU?rel=0" 
+                title="The Lab - Bumper" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy">
+              </iframe>
+            </div>
+            <div class="p-4">
+              <span class="badge rounded-pill bg-info text-dark text-uppercase tracking-wider mb-2">Web Content</span>
+              <h3 class="h4 font-cinzel fw-bold mb-2">The Lab — Bumper</h3>
+              <p class="text-secondary small mb-0">A fast, high-energy gaming channel bumper built to hook viewers from the very first frame.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Stranger at The Door -->
+        <div class="col-md-6 col-lg-4">
+          <div class="cinematic-card position-relative overflow-hidden h-100 bg-dark-surface border border-secondary-subtle">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/SWcSEza4B6Y?si=547chGgP9BMV90aC&rel=0" 
+                title="Stranger At The Door" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy">
+              </iframe>
+            </div>
+            <div class="p-4">
+              <span class="badge rounded-pill bg-primary text-uppercase tracking-wider mb-2">Comedic-Horror</span>
+              <h3 class="h4 font-cinzel fw-bold mb-2">Stranger At The Door</h3>
+              <p class="text-secondary small mb-0">A tension-filled comedy-horror short driven by sharp comedic timing and authentic practical effects.</p>
+            </div>
+          </div>
+        </div>        
+
+        <!-- Project: The Jacuzzi -->
+        <div class="col-md-6 col-lg-4">
+          <div class="cinematic-card position-relative overflow-hidden h-100 bg-dark-surface border border-secondary-subtle">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/mk9OiQhRWTU?si=bCD0EZaOydTTolw8&rel=0" 
+                title="The Jacuzzi" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy">
+              </iframe>
+            </div>
+            <div class="p-4">
+              <span class="badge rounded-pill bg-warning text-dark text-uppercase tracking-wider mb-2">Short Film</span>
+              <h3 class="h4 font-cinzel fw-bold mb-2">The Jacuzzi</h3>
+              <p class="text-secondary small mb-0">A poignant narrative short exploring the fragile intersection of grief, memory, and enduring friendship.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-Bleed High-Impact CTA Banner -->
+  <section class="py-5 bg-gradient-cta text-center position-relative border-top border-secondary-subtle">
+    <div class="container py-5 my-4 position-relative z-2">
+      <p class="text-uppercase tracking-widest text-secondary small fw-semibold">Collaboration</p>
+      <h2 class="display-3 font-cinzel fw-bold mb-4">Let's Create Something Extraordinary</h2>
+      <p class="lead text-light-50 max-w-600 mx-auto mb-5 font-sans">
+        Available for narrative film editing, commercial video production, and custom visual projects.
+      </p>
+      <a href="/about-contact/" class="btn btn-light btn-lg px-5 py-3 rounded-pill text-uppercase tracking-wider fw-bold">Start a Conversation</a>
+    </div>
+  </section>
+
+  <!-- Minimal Dark Footer -->
+  <footer class="py-4 bg-black border-top border-secondary-subtle">
+    <div class="container-fluid px-md-5 d-flex flex-column flex-sm-row justify-content-between align-items-center">
+      <p class="mb-0 text-secondary small font-sans">&copy; <span id="current-year">2026</span> Wes Timmons Media. All rights reserved.</p>
+      <a href="mailto:wes@westimmonsmedia.com" class="text-secondary text-decoration-none small tracking-widest text-uppercase mt-2 mt-sm-0">wes@westimmonsmedia.com</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

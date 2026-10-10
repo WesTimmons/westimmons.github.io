@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self'; 
+  script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; 
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; 
+  font-src 'self' https://fonts.gstatic.com; 
+  img-src 'self' data: https:; 
+  frame-src https://www.youtube.com; 
+  connect-src 'self' https://api.web3forms.com;">
+  <title>Editing & Film | Wes Timmons Media</title>
+  <!-- Google Fonts for Editorial Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="/assets/css/custom.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white">
+
+  <!-- Fixed Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top py-3 navbar-dark">
+    <div class="container-fluid px-4 px-md-5">
+      <a class="navbar-brand fw-bold text-uppercase tracking-wider font-cinzel fs-4" href="/">WES TIMMONS MEDIA</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-lg-4 text-uppercase tracking-widest small fw-semibold">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/editing-and-film/">Editing & Film</a></li>
+          <li class="nav-item"><a class="nav-link" href="/photography/">Photography</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about-contact/">About & Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Compact Page Header -->
+  <section class="pt-5 mt-5 pb-4 bg-black">
+    <div class="container-fluid px-4 px-md-5 pt-4 text-center">
+      <p class="text-uppercase tracking-widest text-secondary fw-semibold mb-2 small">Portfolio</p>
+      <h1 class="display-3 font-cinzel fw-bold mb-3">Editing & Film</h1>
+      <p class="lead text-secondary max-w-700 mx-auto font-sans fw-light fs-5">
+        A curated selection of narrative short films, high-impact trailer edits, commercial projects, and video essays.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter Buttons Section -->
+  <section class="py-3 bg-black sticky-top border-bottom border-secondary-subtle z-3" style="top: 70px;">
+    <div class="container-fluid px-4 px-md-5">
+      <div class="d-flex flex-wrap justify-content-center gap-2 gap-md-3" id="portfolio-filters">
+        <button class="btn btn-outline-light rounded-pill px-4 py-2 text-uppercase tracking-wider small active" data-filter="all">All Pieces</button>
+        <button class="btn btn-outline-light rounded-pill px-4 py-2 text-uppercase tracking-wider small" data-filter="editing">Editing</button>
+        <button class="btn btn-outline-light rounded-pill px-4 py-2 text-uppercase tracking-wider small" data-filter="filmmaking">Filmmaking</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Video Grid -->
+  <section class="py-5 bg-black">
+    <div class="container-fluid px-4 px-md-5">
+      <div class="row g-4 g-xl-5" id="portfolio-grid">
+
+        <!-- Project 1: The Lab -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="editing">
+          <div class="cinematic-card position-relative overflow-hidden h-100 bg-dark-surface border border-secondary-subtle">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/-lA-dEMpLtU?si=SQT-VHOQ6TvkHrVl" 
+                title="The Lab - Bumper" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy">
+              </iframe>
+            </div>
+            <div class="p-4">
+              <span class="badge rounded-pill bg-info text-dark text-uppercase tracking-wider mb-2">Web Content</span>
+              <h3 class="h4 font-cinzel fw-bold mb-2">The Lab — Bumper</h3>
+              <p class="text-secondary small mb-0">Web Content for gaming channel.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Stranger At The Door -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="editing">
+          <div class="cinematic-card position-relative overflow-hidden h-100 bg-dark-surface border border-secondary-subtle">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/SWcSEza4B6Y?si=547chGgP9BMV90aC" 
+                title="Stranger At The Door" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy">
+              </iframe>
+            </div>
+            <div class="p-4">
+              <span class="badge rounded-pill bg-primary text-uppercase tracking-wider mb-2">Comedy-Horror</span>
+              <h3 class="h4 font-cinzel fw-bold mb-2">Stranger At The Door</h3>
+              <p class="text-secondary small mb-0">Comedic-Horror (episodic style) editing.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: The Jacuzzi -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="editing">
+          <div class="cinematic-card position-relative overflow-hidden h-100 bg-dark-surface border border-secondary-subtle">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/mk9OiQhRWTU?si=bCD0EZaOydTTolw8" 
+                title="The Jacuzzi" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy">
+              </iframe>
+            </div>
+            <div class="p-4">
+              <span class="badge rounded-pill bg-warning text-dark text-uppercase tracking-wider mb-2">Short Film</span>
+              <h3 class="h4 font-cinzel fw-bold mb-2">The Jacuzzi</h3>
+              <p class="text-secondary small mb-0">Dramatic - Short film.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Yikes! -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="editing">
+          <div class="cinematic-card position-relative overflow-hidden h-100 bg-dark-surface border border-secondary-subtle">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/F1qvxTJDjvU" 
+                title="Yikes! - Short Film" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy">
+              </iframe>
+            </div>
+            <div class="p-4">
+              <span class="badge rounded-pill bg-warning text-dark text-uppercase tracking-wider mb-2">Short Film</span>
+              <h3 class="h4 font-cinzel fw-bold mb-2">Yikes!</h3>
+              <p class="text-secondary small mb-0">Comedic - Short Film.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Django by Tarantino -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="editing">
+          <div class="cinematic-card position-relative overflow-hidden h-100 bg-dark-surface border border-secondary-subtle">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/_dbwCA7kUfk" 
+                title="Django by Tarantino" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy">
+              </iframe>
+            </div>
+            <div class="p-4">
+              <span class="badge rounded-pill bg-secondary text-uppercase tracking-wider mb-2">Video Essay</span>
+              <h3 class="h4 font-cinzel fw-bold mb-2">Django by Tarantino</h3>
+              <p class="text-secondary small mb-0">Video Essay - Narrated by Wes Timmons.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Be Afraid - Trailer -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="editing">
+          <div class="cinematic-card position-relative overflow-hidden h-100 bg-dark-surface border border-secondary-subtle">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/4Mt4ZRe7YA4?si=cC-eQ94wdzEuVHyz" 
+                title="Be Afraid - Trailer" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy">
+              </iframe>
+            </div>
+            <div class="p-4">
+              <span class="badge rounded-pill bg-primary text-uppercase tracking-wider mb-2">Trailer Editing</span>
+              <h3 class="h4 font-cinzel fw-bold mb-2">Be Afraid — Trailer</h3>
+              <p class="text-secondary small mb-0">Example of trailer-style editing.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Parody Advertisement -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="editing">
+          <div class="cinematic-card position-relative overflow-hidden h-100 bg-dark-surface border border-secondary-subtle">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/mpZTW9U94n0" 
+                title="Parody Advertisement" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy">
+              </iframe>
+            </div>
+            <div class="p-4">
+              <span class="badge rounded-pill bg-warning text-dark text-uppercase tracking-wider mb-2">Commercial / Satire</span>
+              <h3 class="h4 font-cinzel fw-bold mb-2">Parody Advertisement</h3>
+              <p class="text-secondary small mb-0">A Parody ad about a “New Drug”.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: Spirit of Long Beach -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="filmmaking">
+          <div class="cinematic-card position-relative overflow-hidden h-100 bg-dark-surface border border-secondary-subtle">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/iPYBMx6JBZw" 
+                title="Spirit of Long Beach" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy">
+              </iframe>
+            </div>
+            <div class="p-4">
+              <span class="badge rounded-pill bg-info text-dark text-uppercase tracking-wider mb-2">HFPA Grant Winner</span>
+              <h3 class="h4 font-cinzel fw-bold mb-2">Spirit of Long Beach</h3>
+              <p class="text-secondary small mb-0">Received grant from Hollywood Foreign Press. This tells the story of a key, and how it ends up with its owner.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9: The Cure -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="filmmaking">
+          <div class="cinematic-card position-relative overflow-hidden h-100 bg-dark-surface border border-secondary-subtle">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/Sj01ay7UpeE?si=7W7Dy3ee240vXhDx" 
+                title="The Cure" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy">
+              </iframe>
+            </div>
+            <div class="p-4">
+              <span class="badge rounded-pill bg-warning text-dark text-uppercase tracking-wider mb-2">Awarded Best Editor</span>
+              <h3 class="h4 font-cinzel fw-bold mb-2">The Cure</h3>
+              <p class="text-secondary small mb-0">Awarded Best Editor at the LAVC Film Festival. A short film about the dangers of googling for medical advice.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 10: She’ll Never Know -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="filmmaking">
+          <div class="cinematic-card position-relative overflow-hidden h-100 bg-dark-surface border border-secondary-subtle">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/TJ3T7sQbVe8?si=IZ-memP0b728rtLz" 
+                title="She’ll Never Know" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                loading="lazy">
+              </iframe>
+            </div>
+            <div class="p-4">
+              <span class="badge rounded-pill bg-secondary text-uppercase tracking-wider mb-2">CSULB Submission</span>
+              <h3 class="h4 font-cinzel fw-bold mb-2">She’ll Never Know</h3>
+              <p class="text-secondary small mb-0">CSULB Film School submission. A short film about the secrets we keep, even from our loved ones.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-5 bg-gradient-cta text-center position-relative border-top border-secondary-subtle">
+    <div class="container py-4 my-2 position-relative z-2">
+      <h2 class="display-4 font-cinzel fw-bold mb-3">Have a Project in Mind?</h2>
+      <p class="lead text-light-50 max-w-600 mx-auto mb-4 font-sans">
+        Available for feature editing, commercial work, and custom video production.
+      </p>
+      <a href="/about-contact/" class="btn btn-light btn-lg px-5 py-3 rounded-pill text-uppercase tracking-wider fw-bold fs-6">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-black border-top border-secondary-subtle">
+    <div class="container-fluid px-md-5 d-flex flex-column flex-sm-row justify-content-between align-items-center">
+      <p class="mb-0 text-secondary small font-sans">&copy; <span id="current-year">2026</span> Wes Timmons Media. All rights reserved.</p>
+      <a href="mailto:wes@westimmonsmedia.com" class="text-secondary text-decoration-none small tracking-widest text-uppercase mt-2 mt-sm-0">wes@westimmonsmedia.com</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
